@@ -1,0 +1,1 @@
+## Notes about my NLW class Origin. 
