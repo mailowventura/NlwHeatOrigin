@@ -20,15 +20,21 @@
           <span>
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="images/mailow.svg" alt="Foto pessoal" />
+          <img id="userImage" src="images/mailow.svg" alt="Foto pessoal" />
         </div>
 
-        <h1 id="userName">Mailow Ventura</h1>
-        <a href="https://github.com/mailowventura" target="_blank">
-          <img src="images/github.svg" alt="Icone Github" />mailowventura</a
+        <h1 id="userName">Malilow Ventura</h1>
+        <a
+          id="userLink"
+          href="https://github.com/mailowventura"
+          target="_blank"
+        >
+          <img src="images/github.svg" alt="Icone Github" /><span id="userLogin"
+            >perfil github</span
+          ></a
         >
 
-        <p>
+        <p id="userBio">
           Sou apaixonado pela programação e estou em uma jornada como Developer
         </p>
 
@@ -60,26 +66,6 @@
       </div>
     </main>
 
-    <script>
-      const linksSocialMedia = {
-        github: "mailowventura",
-        youtube: "UCftmCz0wvXkMwOnaLHOeu5Q",
-        facebook: "mailow.ventura",
-        instagram: "mailowventura",
-        twitter: "VenturaMailow",
-      };
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute("class");
-
-          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`;
-
-          // alert(li.children[0].href);
-        }
-      }
-
-      changeSocialMediaLinks();
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
